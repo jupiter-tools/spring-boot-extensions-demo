@@ -1,10 +1,12 @@
-package com.jupiter.tools.demo.postgres.repository;
+package com.jupiter.tools.demo.mysql.repository;
 
 import com.github.database.rider.core.api.dataset.DataSet;
 import com.github.database.rider.core.api.dataset.DataSetFormat;
 import com.github.database.rider.core.api.exporter.ExportDataSet;
-import com.jupiter.tools.demo.postgres.model.Task;
-import com.jupiter.tools.spring.test.postgres.annotation.meta.EnablePostgresDataTest;
+
+import com.jupiter.tools.demo.mysql.model.Task;
+import com.jupiter.tools.spring.test.mysql.annotation.meta.EnableMySqlDataTest;
+
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +23,7 @@ import static org.assertj.core.api.Assertions.assertThat;
  *
  * @author Korovin Anatoliy
  */
-@EnablePostgresDataTest
+@EnableMySqlDataTest
 class TaskRepositoryTest {
 
     @Autowired
@@ -50,5 +52,11 @@ class TaskRepositoryTest {
                                      Task::getName)
                          .containsOnly(UUID.fromString("d4054617-e11d-4a2c-bbfd-fff27501e1ce"),
                                        "first task");
+    }
+
+    @Test
+    @DataSet(cleanBefore = true, cleanAfter = true)
+    void nativeJsonQuery() {
+        assertThat(taskRepository.nativeJson()).isNotNull();
     }
 }
