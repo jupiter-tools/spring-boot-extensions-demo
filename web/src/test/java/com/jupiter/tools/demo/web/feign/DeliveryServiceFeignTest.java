@@ -1,5 +1,6 @@
-package com.jupiter.tools.demo.web.service;
+package com.jupiter.tools.demo.web.feign;
 
+import com.jupiter.tools.demo.web.feign.DeliveryServiceFeign;
 import com.jupiter.tools.spring.test.web.annotation.EnableEmbeddedWebServerTest;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,7 +8,6 @@ import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.web.bind.annotation.*;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * Created on 03.02.2019.

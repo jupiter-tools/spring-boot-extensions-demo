@@ -1,4 +1,4 @@
-package com.jupiter.tools.demo.web.service;
+package com.jupiter.tools.demo.web.feign;
 
 import com.jupiter.tools.spring.test.web.annotation.EnableEmbeddedWebServerTest;
 import org.junit.jupiter.api.Test;

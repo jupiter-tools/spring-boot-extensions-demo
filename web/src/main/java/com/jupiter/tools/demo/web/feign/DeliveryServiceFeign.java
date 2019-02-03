@@ -1,4 +1,4 @@
-package com.jupiter.tools.demo.web.service;
+package com.jupiter.tools.demo.web.feign;
 
 
 import org.springframework.cloud.openfeign.FeignClient;
