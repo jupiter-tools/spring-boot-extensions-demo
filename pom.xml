@@ -30,12 +30,12 @@
 
     <modules>
         <!--<module>core</module>-->
-        <!--<module>activemq</module>-->
+        <module>web</module>
         <!--<module>jpa</module>-->
         <module>postgres</module>
         <module>mysql</module>
         <module>rabbitmq</module>
-        <!--<module>web</module>-->
+        <module>activemq</module>
     </modules>
 
     <dependencies>
