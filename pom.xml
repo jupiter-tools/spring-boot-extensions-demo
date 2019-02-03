@@ -30,11 +30,11 @@
 
     <modules>
         <!--<module>core</module>-->
-        <!--<module>rabbitmq</module>-->
         <!--<module>activemq</module>-->
         <!--<module>jpa</module>-->
-        <module>mysql</module>
         <module>postgres</module>
+        <module>mysql</module>
+        <module>rabbitmq</module>
         <!--<module>web</module>-->
     </modules>
 
