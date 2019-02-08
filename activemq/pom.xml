@@ -24,17 +24,7 @@
         <apache.commons.lang3.version>3.3.2</apache.commons.lang3.version>
     </properties>
 
-    <repositories>
-        <repository>
-            <id>snapshots-repo</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-            <releases><enabled>false</enabled></releases>
-            <snapshots><enabled>true</enabled></snapshots>
-        </repository>
-    </repositories>
-
     <dependencies>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-activemq</artifactId>
@@ -43,18 +33,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-amqp</artifactId>
         </dependency>
-
         <dependency>
             <groupId>com.jupiter-tools</groupId>
             <artifactId>spring-test-activemq</artifactId>
-            <version>0.1-SNAPSHOT</version>
+            <version>${jupiter-spring-test.version}</version>
         </dependency>
-
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-        </dependency>
-
     </dependencies>
 
 

@@ -42,22 +42,13 @@
         <dependency>
             <groupId>com.jupiter-tools</groupId>
             <artifactId>spring-test-postgres</artifactId>
-            <version>0.1-SNAPSHOT</version>
+            <version>${jupiter-spring-test.version}</version>
         </dependency>
-
-        <!-- DB -->
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
             <scope>provided</scope>
         </dependency>
-        <!-- DB -->
-
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-        </dependency>
-
     </dependencies>
 
 
